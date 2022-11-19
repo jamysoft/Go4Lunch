@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:backgroundTint="@color/white">
+
+    <TextView
+        android:id="@+id/name_resto"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:layout_marginLeft="2dp"
+        android:textColor="@color/teal_700"
+        tools:text="Le Zinc"
+        android:textStyle="bold"
+         />
+    <TextView
+        android:id="@+id/distance_resto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/picture_resto"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/teal_700"
+        tools:text="10km"
+        android:textStyle="italic"
+        />
+    <TextView
+        android:id="@+id/adresse_resto"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_resto"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:textColor="@color/teal_700"
+        tools:text="French,rue guynemer yerre "
+        />
+    <TextView
+        android:id="@+id/nb_personne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/picture_resto"
+        app:layout_constraintTop_toBottomOf="@id/name_resto"
+        android:textSize="16sp"
+        android:paddingTop="10dp"
+        android:paddingRight="2dp"
+        android:gravity="center"
+        android:textColor="@color/teal_700"
+        tools:text="(1)"
+        android:drawableStart="@drawable/ic_group_24"
+        />
+
+    <TextView
+        android:id="@+id/timing_resto"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/adresse_resto"
+        android:textSize="12sp"
+        android:padding="10dp"
+        android:layout_marginLeft="2dp"
+        android:textColor="@color/teal_700"
+        tools:text="open until 7pm "
+        />
+
+    <RatingBar
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:progressTint="#FFC107"
+        tools:rating="2"
+        android:stepSize="1"
+        app:layout_constraintEnd_toStartOf="@id/picture_resto"
+        app:layout_constraintTop_toTopOf="@id/timing_resto" />
+
+    <ImageView
+        android:id="@+id/picture_resto"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/name_resto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mynav.xml"
+    app:startDestination="@id/listRestoFragment">
+
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.openclassrooms.go4lunch.ui.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/listRestoFragment"
+        android:name="com.openclassrooms.go4lunch.ui.ListRestoFragment"
+        android:label="fragment_list_resto"
+        tools:layout="@layout/fragment_list_resto" />
+    <fragment
+        android:id="@+id/workmatesFragment"
+        android:name="com.openclassrooms.go4lunch.ui.workmatesFragment"
+        android:label="fragment_workmates"
+        tools:layout="@layout/fragment_workmates" />
+
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.openclassrooms.go4lunch.ui.AboutFragment"
+        android:label="Your Lunch"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.openclassrooms.go4lunch.ui.SettingFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting"
+
+        />
+    <activity
+        android:id="@+id/singOut"
+        android:name="com.openclassrooms.go4lunch.ui.MainActivity"
+        android:label="logOut"
+        tools:layout="@layout/activity_main" />
+</navigation>

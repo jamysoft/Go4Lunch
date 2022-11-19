@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.workmatesFragment">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarlistworkmates"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#F44336"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="I'm Hungry!"
+        app:titleTextColor="@color/white"
+        />
+    <fragment
+        android:id="@+id/autoCompleteFragment"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:fragmentAllowEnterTransitionOverlap="@color/fui_transparent"
+        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/recyclerView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_workmates"
+        />
+
+</FrameLayout>

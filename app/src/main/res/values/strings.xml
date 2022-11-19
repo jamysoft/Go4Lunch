@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Go4Lunch</string>
+    <string name="title_map_view">Map View</string>
+    <string name="title_list_View">List View</string>
+    <string name="title_workmates">Workmates</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_application_id">455343646338686</string>
+    <string name="fb_login_protocol_scheme">fb455343646338686</string>
+    <string name="restaurant_detail_no_phone">no phone restaurant</string>
+    <string name="OpenText">Open until</string>
+
+</resources>
